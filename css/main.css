@@ -1,0 +1,168 @@
+/* ==================== MAIN ==================== */
+.main {
+  background: url('../img/bg-textura.png') #f2f2f2;
+  background-repeat: repeat;
+}
+
+/* Acerca de */
+.main .acerca-de .contenedor {
+  overflow: visible;
+  position: relative;
+}
+.main .acerca-de .foto {
+  width: 80%;
+  /* Siempre tienes que poner relative en el elemento que contiene a este
+  si quieres que al poner absolute, este elemento se posicione con respecto al otro,
+  en realidad tambien funcionaria con relative, pero absolute hace que los otros elementos
+  de la pagina esten por debajo, parece ser que es como que se posiciona con respecto
+  a la pagina entera, pero sin salirse de la posicion donde esta el contenedor de este elemento */
+  position: absolute;
+  left: 0;
+  top: -50px;
+  z-index: 0;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+}
+.main .acerca-de .foto img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.main .acerca-de article {
+  background: #fff;
+  padding: 40px;
+  width: 50%;
+  position: relative;
+  top: 600px;
+  /* top: 150px; */
+  z-index: 1;
+  float: right;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+}
+.main .acerca-de article h3 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.main .acerca-de article p {
+  line-height: 28px;
+  margin-bottom: 15px;
+}
+
+/* Menu */
+.main .menu {
+  padding-top: 570px;
+  margin-bottom: 50px;
+}
+.main .menu .titulo {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2 {
+  border: 1px solid #000;
+  background: transparent;
+  padding: 10px;
+  overflow: hidden;
+}
+.main .menu article {
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+.main .menu .categoria {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.main .menu .platillo {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 4px dotted #000;
+  overflow: hidden;
+}
+.main .menu .nombre {
+  font-size: 20px;
+  margin-bottom: 15px;
+  float: left;
+}
+.main .menu .precio {
+  font-size: 20px;
+  margin-bottom: 15px;
+  float: right;
+}
+.main .menu .descripcion {
+  font-size: 16px;
+  color: #676767;
+  clear: both;
+}
+
+/* Galeria */
+.main .galeria {
+  overflow: hidden;
+}
+.main .galeria .foto {
+  width: 25%;
+  float: left;
+}
+.main .galeria .foto img {
+  vertical-align: top;
+  width: 100%;
+  opacity: 0.7;
+}
+.main .galeria .foto img:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Ubicacion */
+.main .ubicacion {
+  background: #fff;
+  padding: 60px 0;
+}
+.main .ubicacion .titulo {
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.main .ubicacion .direccion {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+.main .ubicacion .horarios {
+  width: 50%;
+  float: right;
+  text-align: right;
+  overflow: hidden;
+}
+.main .ubicacion .direccion .calle {
+  margin-bottom: 15px;
+}
+.main .ubicacion .horarios h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+/* Mapa */
+.main .mapa {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: -10px;
+}
+.main .mapa iframe {
+  width: 100%;
+  max-height: 600px;
+}
